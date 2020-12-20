@@ -90,9 +90,8 @@ typedef struct {
 extern "C" {
 #endif
 
-int	g_glob(const char *__restrict, int, int (*)(const char *, int),
-	    glob_t *__restrict);
-void	g_globfree(glob_t *);
+int	 glob(const char *__restrict, int, int (*)(const char *, int), glob_t *__restrict);
+void globfree(glob_t *);
 
 #ifdef __cplusplus
 }
